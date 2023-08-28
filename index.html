@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="max-w-7xl mx-auto px-5">
+<header>
+    <nav class="flex justify-between items-center my-5">
+        <h1>Hot Gadgats</h1>
+        <button class="btn btn-outline btn-accent">Singup</button>
+    </nav>
+   <div class="flex justify-center">
+    <div class="text-center space-y-3 mb-5" >
+        <h1  class="text-5xl text-center font-bold my-5">Phone Dekho 
+        </h1>
+         <p class="w-96">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humou.</p>
+        <button class="btn btn-outline btn-accent">Buy Now</button>
+        <div>
+            <div class="flex justify-center w-[200px] mx-auto">
+                <img src="./New folder/pngwing 2.png" class="flex-1" alt="">
+                <img src="./New folder/pngwing 1.png" class="flex-1" alt="">
+                <img src="./New folder/pngwing 3.png" class="flex-1" alt="">
+            </div>
+            
+        </div>
+        <p>Search your phone</p>
+    </div>
+   </div>
+    <div class="flex gap-3 text-center justify-center">
+        <input id="input-fild" type="text" placeholder="Search hear" class="input input-bordered input-secondary w-96 outline-none" />
+        <button onclick="handelSearch()" class="btn btn-outline btn-accent">search</button>
+    </div>
+</header>
+<main>
+    <section>
+        <div class=" text-center">
+            <span id="lodar-spen" class="loading loading-spinner text-secondary hidden my-10" ></span>
+        </div>
+        <div id="phone-container" class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-10 my-20"></div>
+        <div class="text-center"><button onclick="loadHandel()" id="more-btn" class="capitalize px-8 py-3 border border-pink-600 text-2xl font-semibold hidden">load more</button></div>
+        <div>      
+            <dialog id="load_Modal" class="modal modal-bottom sm:modal-middle ">
+            <form method="dialog" class="modal-box">
+            <div id="modal-Container" class="px-5"> </div>
+            <div class="modal-action">
+            <button class="btn">Close</button>
+            </div>
+            </form>
+            </dialog>
+        </div>
+    </section>
+<!-- script -->
+<script src="./main.js"></script>
+</main>
+</body>
+</html>
